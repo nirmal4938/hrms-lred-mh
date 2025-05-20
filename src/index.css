@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity))
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f72af; 
+  border-radius: 5px;
+}
+
+
+
+
+::-webkit-scrollbar {
+  visibility: visible;
+}
+
+body:hover ::-webkit-scrollbar {
+  visibility: visible;
+} */
