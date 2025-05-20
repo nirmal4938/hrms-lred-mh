@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Modal } from "antd";
 import { Formik, Field, Form, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
-import { AiOutlineExclamationCircle, AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
 const ChangePassword: React.FC<{ visible: boolean; onClose: () => void }> = ({ visible, onClose }) => {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
@@ -51,7 +51,7 @@ const ChangePassword: React.FC<{ visible: boolean; onClose: () => void }> = ({ v
                 <label className="font-semibold" htmlFor="currentPassword">
                   Current Password
                 </label>
-                <AiOutlineExclamationCircle />
+                <AiOutlineExclamationCircle size={20} />
               </div>
               <div className="relative">
                 <Field
@@ -74,7 +74,7 @@ const ChangePassword: React.FC<{ visible: boolean; onClose: () => void }> = ({ v
                 <label className="font-semibold" htmlFor="newPassword">
                   New Password
                 </label>
-                <AiOutlineExclamationCircle />
+                <AiOutlineExclamationCircle size={20} />
               </div>
               <div className="relative">
                 <Field
@@ -97,7 +97,7 @@ const ChangePassword: React.FC<{ visible: boolean; onClose: () => void }> = ({ v
                 <label className="font-semibold" htmlFor="confirmPassword">
                   Confirm Password
                 </label>
-                <AiOutlineExclamationCircle />
+                <AiOutlineExclamationCircle size={20} />
               </div>
               <div className="relative">
                 <Field
